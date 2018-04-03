@@ -57,6 +57,7 @@ class Configuration implements ConfigurationInterface
         if (!\in_array($method, $methods)) {
             throw new Exception\UnexpectedValueException('The method is unknown or unsupported.');
         }
+        $method = \strtoupper($method);
         $this->name = $name;
         $this->method = $method;
     }
