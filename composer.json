@@ -2,8 +2,12 @@
     "name": "genial-framework/form",
     "description": "Create elegant and reusable forms with complete ease.",
     "keywords": [
+        "php72-component",
+        "secure-by-default",
+        "reusable",
+        "form-builder"
     ],
-    "license": "BSD 3-Clause",
+    "license": "MIT",
     "authors": [
         {
             "name": "Nicholas English",
