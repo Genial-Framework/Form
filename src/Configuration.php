@@ -39,7 +39,7 @@ class Configuration implements ConfigurationInterface
      *
      * @return void Return nothing.
      */
-    public function __construct(string $name = 'genial-framework/form', string $method = 'POST')
+    public function __construct(string $name = 'genial-framework-form', string $method = 'POST')
     {
         $methods = [
             'POST',
