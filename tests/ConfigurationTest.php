@@ -30,6 +30,8 @@ class ConfigurationTest extends TestCase
         $configuration3 = new Configuration('mySampleForm3', 'GET');
         $configuration4 = new Configuration('mySampleForm4', 'GET');
         $configuration5 = new Configuration();
+        $configuration6 = new Configuration('');
+        $configuration7 = new Configuration(' ');
         $this->assertEquals($configuration1->name(), 'mySampleForm1');
         $this->assertEquals($configuration1->method(), 'POST');
         $this->assertEquals($configuration2->name(), 'mySampleForm2');
@@ -40,6 +42,10 @@ class ConfigurationTest extends TestCase
         $this->assertEquals($configuration4->method(), 'GET');
         $this->assertEquals($configuration5->name(), 'genial-framework-form');
         $this->assertEquals($configuration5->method(), 'POST');
+        $this->assertEquals($configuration6->name(), 'genial-framework-form');
+        $this->assertEquals($configuration6->method(), 'POST');
+        $this->assertEquals($configuration7->name(), 'genial-framework-form');
+        $this->assertEquals($configuration7->method(), 'POST');
     }
     public function testConfigurationClassExceptions1()
     {
