@@ -45,7 +45,7 @@ class ConfigurationTest extends TestCase
     }
     public function testConfigurationClassExceptions2()
     {
-        $this->expectException(Exception\UnexpectedException::class);
+        $this->expectException(Exception\UnexpectedValueException::class);
         $configuration = new Configuration('mySampleForm', 'PUT');
     }
     //----//
