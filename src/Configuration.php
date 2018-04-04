@@ -82,5 +82,4 @@ class Configuration implements ConfigurationInterface
     {
         return $this->name;
     }
-
 }
