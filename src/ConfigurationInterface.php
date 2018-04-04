@@ -46,5 +46,4 @@ interface ConfigurationInterface
      * @return string Return the form name.
      */
     public function name(): string;
-
 }
